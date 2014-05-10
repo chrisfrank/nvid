@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>nvid Test</title>
+
+  <style>
+    html {
+      font-family: sans-serif;
+      line-height: 1.4;
+    }
+    body {
+      max-width: 555px;
+      margin: 1em auto;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 1em auto;
+      padding: 1em;
+      background: #f3f3f3;
+    }
+    p:first-child {
+      margin-top: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>nvid</h1>
+  <h3>for people who still measure web pages in kilobytes</h3>
+  <p>Youtube embeds are big, even before you click to start watching one.</p>
+  <p>It would be better not to load all that stuff until you've clicked to watch.</p>
+  <p>Just give this script some things to click on. Clicking transforms them into a auto-playing videos. The experience is identical to a straight Youtube embed, but it's an order of magnitude lighter.</p>
+  <h4>Some Examples:</h4>
+  <ul>
+    <li>
+      <h5>Video-shaped Image:</h5>
+      <a class="video_container" href="http://www.youtube.com/watch?v=bStr4UebVU0"><img src="poster.jpg" alt="Image Link" /></a>
+    </li>
+    <li>
+      <h5>Text link:</h5>
+      <p>Yo, check out my <a href="http://www.youtube.com/watch?v=XUNvz0HKhiw">video</a> on YouTube!</p>
+    </li>
+    <li>
+      <h5>Oh yeah,</h5>
+      <p>It works with <a href="http://vimeo.com/87324579">Vimeo</a> too.</p>
+    </li>
+  </ul>
+  <script src="nvid.js"></script>
+  <script>
+    window.n = new nvid(document.querySelectorAll('a'))
+  </script>
+</body>
+</html>
